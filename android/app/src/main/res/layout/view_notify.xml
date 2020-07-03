@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+   >
+
+    <ImageView
+        android:id="@+id/songIv"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/closeIv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/note_btn_close_white" />
+
+    <TextView
+        android:id="@+id/songNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/songIv"
+        android:text="愿得一人心"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/songCreatorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/songNameTv"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/songIv"
+        android:text="李兴亮-愿得一人心"
+        android:textColor="#99333333"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/dividerView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/songCreatorTv"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/songIv"
+        android:background="#33333333" />
+
+     <RelativeLayout
+         android:layout_toRightOf="@+id/songIv"
+         android:layout_below="@+id/dividerView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <Button
+             android:layout_centerVertical="true"
+             android:id="@+id/likeIv"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:scaleType="fitXY"
+             android:layout_marginLeft="15dp"
+             android:background="@drawable/note_btn_love_white" />
+         <Button
+             android:id="@+id/previousIv"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:scaleType="fitXY"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="30dp"
+             android:layout_toRightOf="@+id/likeIv"
+             android:background="@drawable/note_btn_pre_white" />
+         <ImageView
+             android:id="@+id/playIv"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:scaleType="fitXY"
+             android:layout_marginLeft="15dp"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/previousIv"
+             />
+         <Button
+             android:id="@+id/nextIv"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:scaleType="fitXY"
+             android:layout_marginLeft="15dp"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/playIv"
+             android:background="@drawable/note_btn_next_white" />
+
+         <Button
+             android:id="@+id/lyricIv"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:scaleType="fitXY"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="30dp"
+             android:layout_toRightOf="@+id/nextIv"
+             android:background="@drawable/note_btn_lyc_white" />
+
+     </RelativeLayout>
+</RelativeLayout>
