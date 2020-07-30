@@ -1,5 +1,4 @@
-# mymusic
-# Flutter版本的网易云音乐
+# Flutter版网易云音乐
 实现了播放音乐，歌词，搜索，视频播放，通知栏播放，等功能，暂时只支持邮箱登录(api的关系)
 
 <div align="center">
